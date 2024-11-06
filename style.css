@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "Space Grotesk", sans-serif;
+  src: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  }
+  
+
+
+#header {
+    width: auto;
+    background-color: #35084c;
+    background-size: cover;
+    height: 250px;
+    padding: 0px 0px;
+}
+
+#border-circle {
+    width: 475px; /* Diameter of the circle */
+    height: 475px;
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #4d9bc8;
+    position: absolute;
+    top: -125px;
+    right: -125px; /* Half of the diameter to create overlap */
+}
+
+#orange-circle {
+position: absolute;
+border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+top: -30%;
+left: 75%;
+width: 70vmin;
+height: 70vmin;
+background: #ef5200;
+background-image: linear-gradient(45deg, #3023AE 0%, #ef5200 100%);
+
+
+animation: squish 1s linear infinite alternate;
+}
+
+@keyframes squish {
+0% {
+border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+}
+100% {
+border-radius: 40% 60%;
+}
+}
+
+#Layer_1 {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    align-self: auto;
+    
+}
+
+#orange-circle a {
+    position: absolute;
+    top: 200px;
+    right: 375px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 10px;
+    background-color: #35084c;
+    color: #8cadd3; /* Dark text color */
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 50%;
+    border-color: #4d9bc8;
+}
+
+#orange-circle a:hover {
+    background-color: #35084c; /* Slightly darker shade on hover */
+    color: #793fca; /* Even darker text on hover */
+    animation: morph 0.2s linear alternate;
+}
+
+#orange-circle b {
+    position: absolute;
+    top: 325px;
+    right: 325px;
+    height: 35px;
+    display: block;
+    margin: 10px;
+    background-color: #35084c;
+    color: #8cadd3; /* Dark text color */
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4d9bc8;
+}
+
+#orange-circle b:hover {
+    background-color: #35084c; /* Slightly darker shade on hover */
+    color: #793fca; /* Even darker text on hover */
+    animation: morph 0.2s linear alternate;
+}
+
+#orange-circle c {
+    position: absolute;
+    top: 400px;
+    right: 180px;
+    height: 35px;
+    display: block;
+    margin: 10px;
+    background-color: #35084c;
+    color: #8cadd3; /* Dark text color */
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4d9bc8;
+}
+
+#orange-circle c:hover {
+    background-color: #35084c; /* Slightly darker shade on hover */
+    color: #793fca; /* Even darker text on hover */
+    animation: morph 0.2s linear alternate;
+}
+
+#MyName {
+    color: #969090;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    
+
+}
+
+
+/* Add this to your style.css */
+
+.sidebar {
+    position: fixed;
+    top: 20%;
+    height: 100%; /* Adjust based on your needs */
+    overflow-y: auto;
+    width: 200px; /* Initial width */
+    transition: width 0.3s ease-out;
+    padding: 20px;
+    background-color: #cd6d3a; /* Light gray background */
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border: 5px solid #ef5200;
+    border-radius: 20px;
+}
+
+.sidebar-image {
+    position: relative;
+    width: 80px; /* Slightly smaller than sidebar width */
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid black;
+}
+
+.sidebar a {
+    position: absolute;
+    top: 100px;
+    height: 35px;
+    display: block;
+    margin: 10px;
+    background-color: #35084c;
+    color: #8cadd3; /* Dark text color */
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4d9bc8;
+}
+
+.sidebar a:hover {
+    background-color: #35084c; /* Slightly darker shade on hover */
+    color: #793fca; /* Even darker text on hover */
+    animation: morph 0.2s linear alternate;
+}
+
+@keyframes morph {
+0% {
+border-width: 0px;
+}
+50% {
+border-width: 10px;
+}
+100% {
+border-width: 5px;
+}
+}
+
+.sidebar b {
+    position: absolute;
+    top: 175px;
+    height: 35px;
+    display: block;
+    margin: 10px;
+    background-color: #35084c;
+    color: #8cadd3; /* Dark text color */
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4d9bc8;
+}
+
+.sidebar b:hover {
+    background-color: #35084c; /* Slightly darker shade on hover */
+    color: #793fca; /* Even darker text on hover */
+    animation: morph 0.2s linear alternate;
+}
+
+@keyframes morph {
+0% {
+border-width: 0px;
+}
+50% {
+border-width: 10px;
+}
+100% {
+border-width: 5px;
+}
+}
+
+.sidebar c {
+    position: absolute;
+    top: 250px;
+    height: 35px;
+    display: block;
+    margin: 10px;
+    background-color: #35084c;
+    color: #8cadd3; /* Dark text color */
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4d9bc8;
+}
+
+.sidebar c:hover {
+    background-color: #35084c; /* Slightly darker shade on hover */
+    color: #793fca; /* Even darker text on hover */
+    animation: morph 0.2s linear alternate;
+}
+
+@keyframes morph {
+0% {
+border-width: 0px;
+}
+50% {
+border-width: 10px;
+}
+100% {
+border-width: 5px;
+}
+}
+
+#mainContent {
+    flex-grow: 1;
+    padding-left: 170px; /* Space between sidebar and main content */
+    background-image: linear-gradient(45deg, #3023AE 0%, #ef5200 100%);
+    
+}
+
+
+body {
+    
+    background-color: white;
+}
+
+    #Indexbutt {
+        
+        padding: 5px 5px;
+        color: #ba2323;
+    }
+
+#MainTitle {
+    width: 500px;
+    height: 60px;
+    position: relative;
+    border: black 5px;
+    background-color: red;
+    text-align: center;
+    top: 10px;
+    left: 400px;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+h1 {
+    
+    color: rgb(40, 130, 148);
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    
+}
+
+
+p {
+    padding: 20px 100px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+}
